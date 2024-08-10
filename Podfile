@@ -6,5 +6,6 @@ target 'beaconDemo' do
   use_frameworks!
 
   # Pods for beaconDemo
-  pod 'Alamofire' 
+  pod 'Alamofire'
+  pod 'DGCharts' 
 end

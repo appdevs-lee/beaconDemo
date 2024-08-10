@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		051EFFD92C65F9650080E21B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051EFFD82C65F9650080E21B /* ScanViewController.swift */; };
+		054F1FF32C5CCB57002A0929 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054F1FF22C5CCB57002A0929 /* BeaconManager.swift */; };
+		057198802C5B50F50086D66E /* KalmanFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571987D2C5B50F50086D66E /* KalmanFilterType.swift */; };
+		057198812C5B50F50086D66E /* KalmanFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571987C2C5B50F50086D66E /* KalmanFilter.swift */; };
+		057198822C5B50F50086D66E /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571987E2C5B50F50086D66E /* DoubleExtension.swift */; };
+		057198832C5B50F50086D66E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0571987F2C5B50F50086D66E /* Matrix.swift */; };
+		057198852C5B5F820086D66E /* Trilateration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057198842C5B5F820086D66E /* Trilateration.swift */; };
+		0586D54B2C50C3DC0041D521 /* SupportingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586D54A2C50C3DC0041D521 /* SupportingMethods.swift */; };
 		2D46F5682C3DA55500C711E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F5672C3DA55500C711E2 /* AppDelegate.swift */; };
 		2D46F56A2C3DA55500C711E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F5692C3DA55500C711E2 /* SceneDelegate.swift */; };
 		2D46F56C2C3DA55500C711E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D46F56B2C3DA55500C711E2 /* ViewController.swift */; };
@@ -17,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		051EFFD82C65F9650080E21B /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		054F1FF22C5CCB57002A0929 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		0571987C2C5B50F50086D66E /* KalmanFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalmanFilter.swift; sourceTree = "<group>"; };
+		0571987D2C5B50F50086D66E /* KalmanFilterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalmanFilterType.swift; sourceTree = "<group>"; };
+		0571987E2C5B50F50086D66E /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		0571987F2C5B50F50086D66E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		057198842C5B5F820086D66E /* Trilateration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trilateration.swift; sourceTree = "<group>"; };
+		0586D54A2C50C3DC0041D521 /* SupportingMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingMethods.swift; sourceTree = "<group>"; };
 		2D46F5642C3DA55500C711E2 /* beaconDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D46F5672C3DA55500C711E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D46F5692C3DA55500C711E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,10 +91,18 @@
 				2D46F5672C3DA55500C711E2 /* AppDelegate.swift */,
 				2D46F5692C3DA55500C711E2 /* SceneDelegate.swift */,
 				2D46F56B2C3DA55500C711E2 /* ViewController.swift */,
+				054F1FF22C5CCB57002A0929 /* BeaconManager.swift */,
+				057198842C5B5F820086D66E /* Trilateration.swift */,
 				2D46F56D2C3DA55600C711E2 /* Main.storyboard */,
 				2D46F5702C3DA55700C711E2 /* Assets.xcassets */,
 				2D46F5722C3DA55700C711E2 /* LaunchScreen.storyboard */,
 				2D46F5752C3DA55700C711E2 /* Info.plist */,
+				0586D54A2C50C3DC0041D521 /* SupportingMethods.swift */,
+				0571987E2C5B50F50086D66E /* DoubleExtension.swift */,
+				0571987C2C5B50F50086D66E /* KalmanFilter.swift */,
+				0571987D2C5B50F50086D66E /* KalmanFilterType.swift */,
+				0571987F2C5B50F50086D66E /* Matrix.swift */,
+				051EFFD82C65F9650080E21B /* ScanViewController.swift */,
 			);
 			path = beaconDemo;
 			sourceTree = "<group>";
@@ -207,7 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D46F56C2C3DA55500C711E2 /* ViewController.swift in Sources */,
+				0586D54B2C50C3DC0041D521 /* SupportingMethods.swift in Sources */,
 				2D46F5682C3DA55500C711E2 /* AppDelegate.swift in Sources */,
+				051EFFD92C65F9650080E21B /* ScanViewController.swift in Sources */,
+				054F1FF32C5CCB57002A0929 /* BeaconManager.swift in Sources */,
+				057198812C5B50F50086D66E /* KalmanFilter.swift in Sources */,
+				057198832C5B50F50086D66E /* Matrix.swift in Sources */,
+				057198852C5B5F820086D66E /* Trilateration.swift in Sources */,
+				057198802C5B50F50086D66E /* KalmanFilterType.swift in Sources */,
+				057198822C5B50F50086D66E /* DoubleExtension.swift in Sources */,
 				2D46F56A2C3DA55500C711E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,12 +398,14 @@
 				INFOPLIST_FILE = beaconDemo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 접근 항상 허용";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용할 때만 허용";
+				INFOPLIST_KEY_NSMotionUsageDescription = "모션 사용하겠습니다";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,12 +432,14 @@
 				INFOPLIST_FILE = beaconDemo/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "위치 접근 항상 허용";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용할 때만 허용";
+				INFOPLIST_KEY_NSMotionUsageDescription = "모션 사용하겠습니다";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
